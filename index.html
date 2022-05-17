@@ -3,11 +3,14 @@
   <head>
     <title>My first web page</title>
     <style>
-      img {
+      img.image {
         width: 300px;
         border-radius: 50px;
         margin-right: 10px;
         margin-left: 460px;
+      }
+      img.point {
+        margin-left: 800px;
       }
 
       p {
@@ -17,11 +20,22 @@
       p.author {
         font-weight: bold;
       }
+
+      button {
+        margin-left: 1000px;
+      }
     </style>
   </head>
   <body>
-    <img src="images/boom-vine.gif" />
+    <img class="image" src="images/boom-vine.gif" />
     <p class="author">Ruler of this Domain: Seraxle</p>
     <p>why are you doing here???</p>
+    <img class="point" src="images/arrow.gif" />
+    <button onclick="myFunc()">CLICK HERE</button>
+    <script>
+      function myFunc() {
+        alert("RIP BOZO");
+      }
+    </script>
   </body>
 </html>
